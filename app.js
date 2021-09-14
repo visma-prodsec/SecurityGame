@@ -1,8 +1,9 @@
+//let's make the mouse a hammer
+$('html').css({'cursor': 'url(hammer.cur), default'});
+
+//defining stuff for game logic
 const square = document.querySelectorAll('.square')
 const mole = document.querySelectorAll('.mole')
-const porn = document.querySelectorAll('.porn')
-const right = document.querySelectorAll('.porn','.illegal')
-const illegal = document.querySelectorAll('.illegal')
 const timeLeft = document.querySelector('#time-left')
 
 let score = document.querySelector('#score')
@@ -13,11 +14,11 @@ let randomPosition=square[Math.floor(Math.random() * 9)]
 
 function randomSquare() {
   //no need to traverse all the squares
-  randomPosition.classList.remove('mole','porn','illegal')
+  randomPosition.classList.remove('mole','porn','illegal','btc','spotify','virus','facebook','youtube','animate__flash','animate__animated','animate__headShake')
 
   randomPosition = square[Math.floor(Math.random() * 9)]
 $(document).ready(function(){
-    var classes = ["mole", "porn", "illegal"];
+    var classes = ["mole", "porn", "illegal","btc","spotify","virus","facebook","youtube"];
 
     $(randomPosition).each(function(){
         $(this).addClass(classes[~~(Math.random()*classes.length)]);
@@ -25,18 +26,24 @@ $(document).ready(function(){
 });
   //assign the id of the randomPosition to hitPosition for us to use later
   hitPosition = randomPosition.id
+  
 }
 square.forEach(square => {
   square.addEventListener('mousedown', () => {
     if(square.id === hitPosition){
-      if(square.classList.contains('porn') || square.classList.contains('illegal')){
+      if(square.classList.contains('porn') || square.classList.contains('illegal') || square.classList.contains('mole') || square.classList.contains('btc')  || square.classList.contains('virus')){
       result = result + 1
       score.textContent = result
-      hitPosition=null}
-      if(square.classList.contains('mole')){
+      hitPosition=null
+      square.classList.add('animate__animated', 'animate__flash');
+}
+      if(square.classList.contains('spotify')  || square.classList.contains('facebook')  || square.classList.contains('youtube')){
       result = result - 1
       score.textContent = result
-      hitPosition=null}
+      hitPosition=null
+      square.classList.add('animate__animated', 'animate__headShake');
+
+    }
       else{result=result}
 
     }

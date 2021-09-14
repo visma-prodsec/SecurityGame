@@ -1,4 +1,8 @@
 
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0s;
+}
 .square {
   width: 200px;
   height: 200px;
@@ -14,34 +18,38 @@
   width: 618px;
   height: 618px;
 }
-/**
-.mole, .porn, .illegal, .private, .btc, .spotify, .virus, .facebook, .youtube, {
-    background-size: cover;
-}
-.mole {
-  background-size: cover;
-}**/
+
 .porn{
-	  background: black;
+	  background: url('porn.jpg');
+      background-size: cover;
 }
 .illegal{
-    background: red;
+    background: url(illegal.jpg);
+    background-size: cover;
 }
 .mole{
-    background:yellow;
+    background:url(mole.jpg);
+    background-size: cover;
 }
 .btc{
-    background-image: url('porn.jpg');
+    background-image: url('btc.jpg');
+    background-size: cover;
 }
 .spotify{
-    background-image: url('porn.jpg');
+    background-image: url('spotify.jpg');
+    background-size: cover;
 }
 .virus{
-    background-image: url('porn.jpg');
+    background-image: url('virus.jpg');
+    background-size: cover;
 }
 .facebook{
-    background-image: url('porn.jpg');
+    background-image: url('facebook.jpg');
+    background-size: cover;
+
 }
 .youtube{
-    background-image: url('porn.jpg');
+    background-image: url('youtube.jpg');
+    background-size: cover;
+
 }
