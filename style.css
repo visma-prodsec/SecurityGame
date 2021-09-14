@@ -2,12 +2,16 @@
 :root {
   --animate-duration: 800ms;
   --animate-delay: 0s;
+  margin: auto;
+  text-align: center;
+  font-family: 'ubuntu';
+  background: #FEFFFE;
 }
 .square {
   width: 200px;
   height: 200px;
   border-style: solid;
-  border-color: black;
+  border-color: #191919;
 }
 
 .grid {
@@ -17,7 +21,42 @@
   align-content: center;
   width: 618px;
   height: 618px;
+  margin: auto;
+  padding-top: 5px;
 }
+h1{font-size: 2em;}
+h2{
+    color: #fff;
+    font-size: 1em;
+}
+.logo{background:no-repeat url(logo.png);
+background-size: contain;}
+.score,.time,.how{background: #f01245; padding: 5px; border: #f01245 solid 3px; border-radius: 20em;}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:  : 0.4fr 0.6fr 2fr; 
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo name name"
+    "logo score time"
+    "logo how how";
+    text-align: center;
+    margin: auto;
+    width: 66.66%;
+}
+
+.logo { grid-area: logo; }
+
+.name { grid-area: name; }
+
+.score { grid-area: score; }
+
+.time { grid-area: time; }
+
+.how { grid-area: how; }
+
 
 .porn{
 	  background: url('porn.jpg');
