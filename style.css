@@ -1,0 +1,47 @@
+
+.square {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-color: black;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 618px;
+  height: 618px;
+}
+/**
+.mole, .porn, .illegal, .private, .btc, .spotify, .virus, .facebook, .youtube, {
+    background-size: cover;
+}
+.mole {
+  background-size: cover;
+}**/
+.porn{
+	  background: black;
+}
+.illegal{
+    background: red;
+}
+.mole{
+    background:yellow;
+}
+.btc{
+    background-image: url('porn.jpg');
+}
+.spotify{
+    background-image: url('porn.jpg');
+}
+.virus{
+    background-image: url('porn.jpg');
+}
+.facebook{
+    background-image: url('porn.jpg');
+}
+.youtube{
+    background-image: url('porn.jpg');
+}
