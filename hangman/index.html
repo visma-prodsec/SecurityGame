@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visma</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/word-list.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+<div style="text-align:center; margin: auto; width: 100%; position: fixed; top:0; margin: 25px; color: #fff;">        <h5>This month you guess our advice!</h5>
+</div>
+  <div style="text-align:center;
+  margin-top: 30px;
+  font-size: 30px;
+  padding: 5px; "><a href="../"><i style="color:white;" class="fas fa-home home-icon"></i></a></div>    <div class="game-modal">
+        <div class="content"  >
+            <img src="#" alt="gif">
+            <h4>Game Over!</h4>
+            <p>The correct word was: <b>rainbow</b></p>
+            <div style="display: none;">
+                        <button id="homeBtn" style="margin-bottom: 5px;">Home</button><br>
+            <button  class="play-again">Play Again</button><br>
+            <div style="display: none;" id="refreshButton">
+             <img src="images/check.gif" alt="check"> <p class="small red">Please make sure you have put a cup before pressing get candy </p> <button class="btn" id="candy" style=" text-align: center;margin: auto; margin-top: 15px;"> get candy</button></div>
+</div>
+            
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="hangman-box">
+            <img src="#" draggable="false" alt="hangman-img">
+            <h1>Hangman Game</h1>
+            <img src="images/avatar.png" style="margin: auto;" />
+
+        </div>
+        <div class="game-box">
+            <ul class="word-display"></ul>
+            <h4 class="hint-text">Hint: <b></b></h4> 1- On 2021 this was the European cyber security month advice. <br>2- the phrase describe something you should always do while surfing the internet<br> 3- This security tip will not be as effective if you didn't have good security awareness.
+            <h4 class="guesses-text">Incorrect guesses: <b></b></h4>
+                        <div class="keyboard"></div>
+
+        </div>
+    </div>
+
+</body>
+</html>
