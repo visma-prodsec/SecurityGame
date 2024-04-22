@@ -43,6 +43,7 @@ const gameOver = (isVictory) => {
     gameModal.querySelector("img").src = `images/${isVictory ? 'victory' : 'lost'}.gif`;
     gameModal.querySelector("h4").innerText = isVictory ? 'Congrats!' : 'Game Over!';
     gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`;
+    gameModal.querySelector("p").innerHTML = `<br><b>Tip: Close the game by clicking the X in the upper right corner.</b>`;
     gameModal.classList.add("show");
         if(isVictory) {
         document.getElementById("refreshButton").style.display = "block"; // or "inline-block" as needed
