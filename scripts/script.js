@@ -42,7 +42,7 @@ const gameOver = (isVictory) => {
     const modalText = isVictory ? `You found our advice:` : 'The advice was:';
     gameModal.querySelector("img").src = `images/${isVictory ? 'victory' : 'lost'}.gif`;
     gameModal.querySelector("h4").innerText = isVictory ? 'Congrats!' : 'Game Over!';
-    gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b> <br><b>Tip: Close the game by clicking the X in the upper right corner.</b>`;
+    gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b> <br><br>Tip: Close the game by clicking the X in the upper right corner.`;
 
     gameModal.classList.add("show");
         if(isVictory) {
